@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles1.css">
+
+    <!--Java Script code for the slide show when the user hovers over the food/
+            drinks image and when the stop hovering it stops-->
     <script type="text/javascript">
         var backgroundImg=["images/burgers.jpg", "images/seafood.jpg", "images/cafe.jpg", "images/drinks.jpg"];
         var i = 0;
@@ -19,7 +22,7 @@
             i =i+1;
             myTimeout= setTimeout(function() {
                 changeImage(i);
-                }, 3000);
+                }, 2000);
         }
 
         //setInterval(changeImage,2000);
@@ -64,7 +67,7 @@
                 </p>
             </div>
             <div class="mission-col">
-                <img src="images/beach.jpg" alt="pic of resort"/>
+                <img src="images/resort2.jpg" alt="pic of resort"/>
             </div>
         </div>
     </section>
@@ -82,10 +85,14 @@
             <div class="services-col1">
                 <h3>Physical Activities</h3>
                 <p>Sun Rise has a fitness center, arcade room, tennis & golf courts for those who want to work up a sweat.</p>
+                <!--Change the reference here-->
+                <a href="" class="mission_btn">LearnMore</a>
             </div>
             <div class="services-col2">
                 <h3>Relaxation</h3>
                 <p>Relax and unwind at our spa & salon. Enjoy a lazy day at the beach, or go shopping at our local shops.</p>
+                <!--Change the reference here-->
+                <a href="" class="mission_btn">LearnMore</a>
             </div>
             <div class="services-col3" id="services-col3" onmouseenter="changeImage(0)" onmouseleave="out()">
                 <h3>Food/Drinks</h3>
@@ -96,10 +103,14 @@
                     <li>TastyBurgers</li>
                     <li>Soleil's Seafood</li>
                 </ul>
+                <!--Change the reference here-->
+                <a href="" class="mission_btn">LearnMore</a>
             </div>
             <div class="services-col4">
                 <h3>Others</h3>
                 <p>Other services include valet, 24-hour room services, and 24-hour concierge service.</p>
+                <!--Change the reference here-->
+                <a href="" class="mission_btn">LearnMore</a>
             </div>
         </div>
 

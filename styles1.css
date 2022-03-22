@@ -203,6 +203,21 @@ h3{
 }
 
 
+.services-col1 a,.services-col2 a,.services-col4 a{
+    left:20px;
+    border:2px solid white;
+    font-size:20px;
+    top:20px;
+}
+
+.services-col3 a{
+    left: 20px;
+    top:30px;
+    font-size:20px;
+    border: 2px solid white;
+}
+
+
 
 /*---------STAFF---------
 -have a 2 column and as many rows you want of staff members*/
@@ -247,6 +262,7 @@ border-radius: 10px;
 }
 
 
+
 /*-------Mission/Goals and history -------------------
 - have the paragraph on oneside and the picture on the other side*/
 
@@ -263,7 +279,7 @@ border-radius: 10px;
 }
 
 .mission-col img{
-    width:500px;
+    width:800px;
 }
 
 .mission-col h1{
