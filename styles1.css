@@ -131,48 +131,55 @@ p{
 
 .services-col1{
     flex-basis:31%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), 
-    rgba(4,9,30,0.5)), url(images/fitness.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.4), 
+    rgba(4,9,30,0.4)), url(images/fitness.jpg);
     background-size: cover;
     background-position: center;
     position:relative;
     border-radius:10px;
     box-sizing: border-box;
     margin:5px;
+    padding-top: 5%;
 }
 
 .services-col2{
     flex-basis:31%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), 
-    rgba(4,9,30,0.5)), url(images/salon.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.4), 
+    rgba(4,9,30,0.4)), url(images/salon.jpg);
     background-size: cover;
     background-position: center;
     position:relative;
     border-radius:10px;
     margin:5px;
     box-sizing: border-box;
+    padding-top: 5%;
 }
+
 .services-col3{
     flex-basis:31%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), 
-    rgba(4,9,30,0.5)), url(images/bar.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.4), 
+    rgba(4,9,30,0.4)), url(images/bar.jpg);
     background-size: cover;
     background-position: center;
     position:relative;
     border-radius:10px;
     box-sizing: border-box;
     margin:5px;
+    color:white;
+    padding-top: 5%;
 }
+
 .services-col4{
     flex-basis:31%;
-    background-image: linear-gradient(rgba(4,9,30,0.5), 
-    rgba(4,9,30,0.5)), url(images/valet.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.4), 
+    rgba(4,9,30,0.4)), url(images/valet.jpg);
     background-size: cover;
     background-position: center;
     position:relative;
     border-radius:10px;
     box-sizing: border-box;
     margin:5px;
+    padding-top: 5%;
 }
 
 h3{
@@ -189,6 +196,19 @@ h3{
 /*can add food hover here
 .services-col:hover NOTES
 */
+
+.services-col1:hover, .services-col2:hover, .services-col4:hover{
+    border:5px solid white;
+    transition:1s;
+}
+
+.services-col3:hover{
+    border:5px solid white;
+    transition:1s;
+    background-image: linear-gradient(rgba(4,9,30,0.5), 
+    rgba(4,9,30,0.5)), url(images/burgers.jpg);;
+}
+
 
 /*---------STAFF---------
 -have a 2 column and as many rows you want of staff members*/
