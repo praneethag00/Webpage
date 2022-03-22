@@ -202,12 +202,6 @@ h3{
     transition:1s;
 }
 
-.services-col3:hover{
-    border:5px solid white;
-    transition:1s;
-    background-image: linear-gradient(rgba(4,9,30,0.5), 
-    rgba(4,9,30,0.5)), url(images/burgers.jpg);;
-}
 
 
 /*---------STAFF---------

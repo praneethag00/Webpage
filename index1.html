@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles1.css">
+    <script type="text/javascript">
+        var backgroundImg=["images/burgers.jpg", "images/seafood.jpg", "images/cafe.jpg", "images/drinks.jpg"];
+        var i = 0;
+        var myTimeout;
+        function changeImage(i){
+            if(i>=backgroundImg.length){
+                i=0;}
+            document.getElementById('services-col3').style.border="5px solid white";
+            document.getElementById('services-col3').style.transition="1s";
+            document.getElementById('services-col3').style.backgroundImage="linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('"+backgroundImg[i]+"')";
+            i =i+1;
+            myTimeout= setTimeout(function() {
+                changeImage(i);
+                }, 3000);
+        }
+
+        //setInterval(changeImage,2000);
+
+        function out(){
+            clearTimeout(myTimeout);
+            document.getElementById('services-col3').style.border="none";
+            document.getElementById('services-col3').style.transition="none";
+            document.getElementById('services-col3').style.backgroundImage="linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url(images/bar.jpg)";
+
+        }
+    </script>
+
 </head>
 <body>
     <section class="header">
@@ -60,7 +87,7 @@
                 <h3>Relaxation</h3>
                 <p>Relax and unwind at our spa & salon. Enjoy a lazy day at the beach, or go shopping at our local shops.</p>
             </div>
-            <div class="services-col3">
+            <div class="services-col3" id="services-col3" onmouseenter="changeImage(0)" onmouseleave="out()">
                 <h3>Food/Drinks</h3>
                 <p>Have a drink at our bar or go to one of the many restaurants that are now available within walking distance.</p>
                 <ul>
