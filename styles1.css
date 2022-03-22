@@ -241,6 +241,13 @@ h3{
     padding:25px;
     cursor:pointer;
     display: flex;
+    position: relative;
+    transition: 1s;
+    top: 0px;
+}
+
+.staff_col:hover{
+    top:-20px;
 }
 
 .staff_col img{
