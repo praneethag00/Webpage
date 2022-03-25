@@ -1,8 +1,21 @@
+/* Name: Praneetha Gobburi
+  Most Recent Update: 3-22-2022
+  Start Date: 3-17-2022
+  Project Name: Sun Rise Resorts website*/
 *{
     margin:0;
     padding:0; 
     font-family: Verdana, Geneva, sans-serif; 
 }
+
+ body{
+    background-color: rgb(56,57,58);
+ }
+
+ h1{
+     color:rgb(209,207,205);
+ }
+
 
 .header{
     min-height: 100vh;
@@ -286,7 +299,7 @@ border-radius: 10px;
 }
 
 .mission-col img{
-    width:800px;
+    width:40vw;
 }
 
 .mission-col h1{
